@@ -1,0 +1,13 @@
+C:\Users\hjhuang\Desktop\ConfigurationSetting\ConfigurationSetting\bin\Debug\ConfigurationSetting.exe.config
+C:\Users\hjhuang\Desktop\ConfigurationSetting\ConfigurationSetting\bin\Debug\ConfigurationSetting.exe
+C:\Users\hjhuang\Desktop\ConfigurationSetting\ConfigurationSetting\bin\Debug\ConfigurationSetting.pdb
+C:\Users\hjhuang\Desktop\ConfigurationSetting\ConfigurationSetting\bin\Debug\DiffieHellman.dll
+C:\Users\hjhuang\Desktop\ConfigurationSetting\ConfigurationSetting\bin\Debug\Org.Mentalis.Security.dll
+C:\Users\hjhuang\Desktop\ConfigurationSetting\ConfigurationSetting\bin\Debug\Tamir.SharpSSH.dll
+C:\Users\hjhuang\Desktop\ConfigurationSetting\ConfigurationSetting\obj\Debug\ConfigurationSetting.csprojResolveAssemblyReference.cache
+C:\Users\hjhuang\Desktop\ConfigurationSetting\ConfigurationSetting\obj\Debug\ConfigurationSetting.Form1.resources
+C:\Users\hjhuang\Desktop\ConfigurationSetting\ConfigurationSetting\obj\Debug\ConfigurationSetting.Properties.Resources.resources
+C:\Users\hjhuang\Desktop\ConfigurationSetting\ConfigurationSetting\obj\Debug\ConfigurationSetting.csproj.GenerateResource.Cache
+C:\Users\hjhuang\Desktop\ConfigurationSetting\ConfigurationSetting\obj\Debug\ConfigurationSetting.csproj.CoreCompileInputs.cache
+C:\Users\hjhuang\Desktop\ConfigurationSetting\ConfigurationSetting\obj\Debug\ConfigurationSetting.exe
+C:\Users\hjhuang\Desktop\ConfigurationSetting\ConfigurationSetting\obj\Debug\ConfigurationSetting.pdb
