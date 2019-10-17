@@ -1,0 +1,8 @@
+*.exe
+*.pdb
+*.exe.config
+*.obj
+*.cache
+*.Cache
+*.suo
+.vs/*

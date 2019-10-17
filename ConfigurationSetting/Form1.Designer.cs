@@ -32,12 +32,19 @@
             this.verSettingTabPage = new System.Windows.Forms.TabPage();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.ASE_D2DB_eP5 = new System.Windows.Forms.TabPage();
+            this.whichStepBox = new System.Windows.Forms.TextBox();
             this.label_subcmd = new System.Windows.Forms.Label();
             this.subCmdBox = new System.Windows.Forms.TextBox();
             this.buttonNextStep = new System.Windows.Forms.Button();
             this.msgBox = new System.Windows.Forms.TextBox();
             this.buttonSetting = new System.Windows.Forms.Button();
             this.ASE_D2DB_eScan420 = new System.Windows.Forms.TabPage();
+            this.whichStepBox420 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.subCmdBox420 = new System.Windows.Forms.TextBox();
+            this.buttonNextStep420 = new System.Windows.Forms.Button();
+            this.msgBox420 = new System.Windows.Forms.TextBox();
+            this.buttonSetting420 = new System.Windows.Forms.Button();
             this.ASE_D2DB_eScan600 = new System.Windows.Forms.TabPage();
             this.SN2_5XP_D2DB_eP5 = new System.Windows.Forms.TabPage();
             this.SN2_5XP_D2DB_eCan600 = new System.Windows.Forms.TabPage();
@@ -50,6 +57,7 @@
             this.verSettingTabPage.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.ASE_D2DB_eP5.SuspendLayout();
+            this.ASE_D2DB_eScan420.SuspendLayout();
             this.SuspendLayout();
             // 
             // funcTabControl
@@ -95,6 +103,7 @@
             // 
             // ASE_D2DB_eP5
             // 
+            this.ASE_D2DB_eP5.Controls.Add(this.whichStepBox);
             this.ASE_D2DB_eP5.Controls.Add(this.label_subcmd);
             this.ASE_D2DB_eP5.Controls.Add(this.subCmdBox);
             this.ASE_D2DB_eP5.Controls.Add(this.buttonNextStep);
@@ -107,6 +116,13 @@
             this.ASE_D2DB_eP5.TabIndex = 0;
             this.ASE_D2DB_eP5.Text = "ASE_D2DB-eP5";
             this.ASE_D2DB_eP5.UseVisualStyleBackColor = true;
+            // 
+            // whichStepBox
+            // 
+            this.whichStepBox.Location = new System.Drawing.Point(96, 16);
+            this.whichStepBox.Name = "whichStepBox";
+            this.whichStepBox.Size = new System.Drawing.Size(51, 20);
+            this.whichStepBox.TabIndex = 10;
             // 
             // label_subcmd
             // 
@@ -134,6 +150,7 @@
             this.buttonNextStep.TabIndex = 7;
             this.buttonNextStep.Text = "next step";
             this.buttonNextStep.UseVisualStyleBackColor = true;
+            this.buttonNextStep.Click += new System.EventHandler(this.buttonNextStep_Click);
             // 
             // msgBox
             // 
@@ -143,6 +160,7 @@
             this.msgBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.msgBox.Size = new System.Drawing.Size(752, 229);
             this.msgBox.TabIndex = 6;
+            this.msgBox.TextChanged += new System.EventHandler(this.msgBox_TextChanged);
             // 
             // buttonSetting
             // 
@@ -152,10 +170,16 @@
             this.buttonSetting.TabIndex = 5;
             this.buttonSetting.Text = "Setting";
             this.buttonSetting.UseVisualStyleBackColor = true;
-            this.buttonSetting.Visible = false;
+            this.buttonSetting.Click += new System.EventHandler(this.buttonSetting_Click);
             // 
             // ASE_D2DB_eScan420
             // 
+            this.ASE_D2DB_eScan420.Controls.Add(this.whichStepBox420);
+            this.ASE_D2DB_eScan420.Controls.Add(this.label1);
+            this.ASE_D2DB_eScan420.Controls.Add(this.subCmdBox420);
+            this.ASE_D2DB_eScan420.Controls.Add(this.buttonNextStep420);
+            this.ASE_D2DB_eScan420.Controls.Add(this.msgBox420);
+            this.ASE_D2DB_eScan420.Controls.Add(this.buttonSetting420);
             this.ASE_D2DB_eScan420.Location = new System.Drawing.Point(4, 22);
             this.ASE_D2DB_eScan420.Name = "ASE_D2DB_eScan420";
             this.ASE_D2DB_eScan420.Padding = new System.Windows.Forms.Padding(3);
@@ -163,6 +187,61 @@
             this.ASE_D2DB_eScan420.TabIndex = 1;
             this.ASE_D2DB_eScan420.Text = "ASE_D2DB-eScan420";
             this.ASE_D2DB_eScan420.UseVisualStyleBackColor = true;
+            // 
+            // whichStepBox420
+            // 
+            this.whichStepBox420.Location = new System.Drawing.Point(96, 16);
+            this.whichStepBox420.Name = "whichStepBox420";
+            this.whichStepBox420.Size = new System.Drawing.Size(51, 20);
+            this.whichStepBox420.TabIndex = 16;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 116);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(71, 13);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "subCommand";
+            // 
+            // subCmdBox420
+            // 
+            this.subCmdBox420.Location = new System.Drawing.Point(15, 132);
+            this.subCmdBox420.Multiline = true;
+            this.subCmdBox420.Name = "subCmdBox420";
+            this.subCmdBox420.Size = new System.Drawing.Size(132, 59);
+            this.subCmdBox420.TabIndex = 14;
+            // 
+            // buttonNextStep420
+            // 
+            this.buttonNextStep420.Enabled = false;
+            this.buttonNextStep420.Location = new System.Drawing.Point(15, 57);
+            this.buttonNextStep420.Name = "buttonNextStep420";
+            this.buttonNextStep420.Size = new System.Drawing.Size(75, 23);
+            this.buttonNextStep420.TabIndex = 13;
+            this.buttonNextStep420.Text = "next step";
+            this.buttonNextStep420.UseVisualStyleBackColor = true;
+            this.buttonNextStep420.Click += new System.EventHandler(this.buttonNextStep_Click);
+            // 
+            // msgBox420
+            // 
+            this.msgBox420.Location = new System.Drawing.Point(153, 16);
+            this.msgBox420.Multiline = true;
+            this.msgBox420.Name = "msgBox420";
+            this.msgBox420.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.msgBox420.Size = new System.Drawing.Size(752, 229);
+            this.msgBox420.TabIndex = 12;
+            this.msgBox420.TextChanged += new System.EventHandler(this.msgBox420_TextChanged);
+            // 
+            // buttonSetting420
+            // 
+            this.buttonSetting420.Location = new System.Drawing.Point(15, 16);
+            this.buttonSetting420.Name = "buttonSetting420";
+            this.buttonSetting420.Size = new System.Drawing.Size(75, 23);
+            this.buttonSetting420.TabIndex = 11;
+            this.buttonSetting420.Text = "Setting";
+            this.buttonSetting420.UseVisualStyleBackColor = true;
+            this.buttonSetting420.Click += new System.EventHandler(this.buttonSetting420_Click);
             // 
             // ASE_D2DB_eScan600
             // 
@@ -255,6 +334,8 @@
             this.tabControl1.ResumeLayout(false);
             this.ASE_D2DB_eP5.ResumeLayout(false);
             this.ASE_D2DB_eP5.PerformLayout();
+            this.ASE_D2DB_eScan420.ResumeLayout(false);
+            this.ASE_D2DB_eScan420.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -279,6 +360,13 @@
         private System.Windows.Forms.TabPage SN2_5XP_D2DB_eP5;
         private System.Windows.Forms.TabPage SN2_5XP_D2DB_eCan600;
         private System.Windows.Forms.TabPage SN2_5XP;
+        private System.Windows.Forms.TextBox whichStepBox;
+        private System.Windows.Forms.TextBox whichStepBox420;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox subCmdBox420;
+        private System.Windows.Forms.Button buttonNextStep420;
+        private System.Windows.Forms.TextBox msgBox420;
+        private System.Windows.Forms.Button buttonSetting420;
     }
 }
 
